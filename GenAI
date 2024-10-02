@@ -29,9 +29,9 @@ model = genai.GenerativeModel('gemini-pro')
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%time
-# response = model.generate_content("Help customer ubderstand about insurance with their profession ?")
+# response = model.generate_content("Help customer understand about insurance with their profession ?")
 
 to_markdown(response.text)
 
-response = model.generate_content("Eplain on Medical Cover ?")
+response = model.generate_content("Explain on Medical Cover ?")
 to_markdown(response.text)
