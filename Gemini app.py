@@ -1,26 +1,5 @@
 pip install -q -U google-generativeai
 
-pip install streamlit
-
-import streamlit as st
-
-st.title ("Welcome to AI Assistant")
-
-!pip install -q streamlit
-
-# Commented out IPython magic to ensure Python compatibility.
-# %%writefile app.py
-# import streamlit as st
-# 
-# x = st.slider('Select a value')
-# st.write(x, 'squared is', x * x)
-
-!npm install localtunnel
-
-!streamlit run /content/app.py &>/content/logs.txt &
-
-
-
 import pathlib
 import textwrap
 
@@ -50,7 +29,7 @@ model = genai.GenerativeModel('gemini-pro')
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%time
-# response = model.generate_content("What do you think of Indian Weavers ?")
+# response = model.generate_content("Help customer ubderstand about insurance with their profession ?")
 
 to_markdown(response.text)
 
